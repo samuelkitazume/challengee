@@ -1,9 +1,15 @@
 var mongoose = require("mongoose");
 
 var UserSchema = new mongoose.Schema({
-    googleKey: "string",
     name: "string",
-    email: "string"
+    email: "string",
+    tokens: {
+        id_token: "string",
+        access_token: "string",
+        expiry_date: "string",
+        token_type: "string",
+        scope: "string"
+    }
 }, { timestamps: true });
 
 var User = mongoose.model("user", UserSchema);
