@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/samuelkitazume/challengee#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
     "mongoose": "^5.4.0"
   }
 }
