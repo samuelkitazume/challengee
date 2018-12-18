@@ -26,6 +26,7 @@ login.route('/cb')
                 User.create({
                     name: userData.name,
                     email: userData.email,
+                    picture: userData.picture,
                     tokens: {
                         id_token: data.id_token,
                         access_token: data.access_token,
